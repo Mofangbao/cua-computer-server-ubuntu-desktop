@@ -82,8 +82,6 @@ docker run -d \
 
 **📖 [CUA 计算机服务器 REST API 文档](https://docs.cua.ai/docs/libraries/computer-server/REST-API)**
 
-```
-
 ## 原始项目
 
 此 Dockerfile 基于原始的 [CUA Kasm Ubuntu 容器](https://github.com/trycua/cua/tree/main/libs/kasm) 进行修改。
