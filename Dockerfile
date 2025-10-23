@@ -54,10 +54,10 @@ RUN wget -O /tmp/wps-office.deb https://pubwps-wps365-obs.wpscdn.cn/download/Lin
     apt install -y /tmp/wps-office.deb && \
     rm /tmp/wps-office.deb
 
-# 下载并安装微信
-RUN wget -O /tmp/wechat.deb https://dldir1v6.qq.com/weixin/Universal/Linux/WeChatLinux_x86_64.deb && \
-    apt install -y /tmp/wechat.deb && \
-    rm /tmp/wechat.deb
+# # 下载并安装微信
+# RUN wget -O /tmp/wechat.deb https://dldir1v6.qq.com/weixin/Universal/Linux/WeChatLinux_x86_64.deb && \
+#     apt install -y /tmp/wechat.deb && \
+#     rm /tmp/wechat.deb
 
 # 下载并安装QQ
 RUN wget -O /tmp/qq.deb https://dldir1v6.qq.com/qqfile/qq/QQNT/Linux/QQ_3.2.19_250904_amd64_01.deb && \
@@ -81,19 +81,19 @@ RUN echo "[Desktop Entry]" > /home/kasm-user/Desktop/wps-office.desktop && \
     echo "Categories=Office;" >> /home/kasm-user/Desktop/wps-office.desktop && \
     chmod +x /home/kasm-user/Desktop/wps-office.desktop
 
-# 创建微信桌面启动器
-RUN echo "[Desktop Entry]" > /home/kasm-user/Desktop/wechat.desktop && \
-    echo "Version=1.0" >> /home/kasm-user/Desktop/wechat.desktop && \
-    echo "Type=Application" >> /home/kasm-user/Desktop/wechat.desktop && \
-    echo "Name=WeChat" >> /home/kasm-user/Desktop/wechat.desktop && \
-    echo "Name[zh_CN]=微信" >> /home/kasm-user/Desktop/wechat.desktop && \
-    echo "Comment=WeChat for Linux" >> /home/kasm-user/Desktop/wechat.desktop && \
-    echo "Comment[zh_CN]=微信Linux版" >> /home/kasm-user/Desktop/wechat.desktop && \
-    echo "Exec=/opt/wechat-universal/wechat" >> /home/kasm-user/Desktop/wechat.desktop && \
-    echo "Icon=/usr/share/icons/hicolor/256x256/apps/wechat.png" >> /home/kasm-user/Desktop/wechat.desktop && \
-    echo "Terminal=false" >> /home/kasm-user/Desktop/wechat.desktop && \
-    echo "Categories=Network;InstantMessaging;" >> /home/kasm-user/Desktop/wechat.desktop && \
-    chmod +x /home/kasm-user/Desktop/wechat.desktop
+# # 创建微信桌面启动器
+# RUN echo "[Desktop Entry]" > /home/kasm-user/Desktop/wechat.desktop && \
+#     echo "Version=1.0" >> /home/kasm-user/Desktop/wechat.desktop && \
+#     echo "Type=Application" >> /home/kasm-user/Desktop/wechat.desktop && \
+#     echo "Name=WeChat" >> /home/kasm-user/Desktop/wechat.desktop && \
+#     echo "Name[zh_CN]=微信" >> /home/kasm-user/Desktop/wechat.desktop && \
+#     echo "Comment=WeChat for Linux" >> /home/kasm-user/Desktop/wechat.desktop && \
+#     echo "Comment[zh_CN]=微信Linux版" >> /home/kasm-user/Desktop/wechat.desktop && \
+#     echo "Exec=wechat" >> /home/kasm-user/Desktop/wechat.desktop && \
+#     echo "Icon=/usr/share/icons/hicolor/256x256/apps/wechat.png" >> /home/kasm-user/Desktop/wechat.desktop && \
+#     echo "Terminal=false" >> /home/kasm-user/Desktop/wechat.desktop && \
+#     echo "Categories=Network;InstantMessaging;" >> /home/kasm-user/Desktop/wechat.desktop && \
+#     chmod +x /home/kasm-user/Desktop/wechat.desktop
 
 # 创建QQ桌面启动器
 RUN echo "[Desktop Entry]" > /home/kasm-user/Desktop/qq.desktop && \
