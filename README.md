@@ -17,14 +17,10 @@
 - **CUA 计算机服务器**：预装用于通过 REST API 进行远程计算机控制
 - **VNC 访问**：通过 noVNC 提供基于 Web 的桌面界面
 - **应用程序**：
-  - WPS Office（中文办公套件）
-  - QQ（中文即时通讯）
+  - WPS Office
+  - QQ
   - VSCode
   - Chrome
-- **开发工具**：
-  - Python 3 和 pip
-  - 屏幕捕获工具（gnome-screenshot、wmctrl、ffmpeg）
-  - 剪贴板工具（xclip、socat）
 
 ## 快速开始
 
